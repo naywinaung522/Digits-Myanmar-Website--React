@@ -15,7 +15,7 @@ export default function Home() {
       <header>
         <div className="container header-container">
           <a className="logo" href="/">
-            <img alt="Digits Myanmar Logo" className="logo-img" src="/images/DM Logo + circle back(31.7.2023).png" />
+            <img alt="Digits Myanmar Logo" className="logo-img" src="/images/dm-logo-circle.png" />
             <span>Digits</span>Myanmar  Ko anY
           </a>
           <button className="mobile-menu-btn">
