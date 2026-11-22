@@ -8,15 +8,14 @@ export default function Home() {
 
   return (
     <>
-
-
+   
       Header
 
       <header>
         <div className="container header-container">
           <a className="logo" href="/">
             <img alt="Digits Myanmar Logo" className="logo-img" src="/images/dm-logo-circle.png" />
-            <span>Digits</span>Myanmar  
+            <span>Digits</span>Myanmar ဆရာကြီး ကိုနေဝင်းအောင် ကြီးကွာ..လေးစားတယ် အရမ်းပဲ
           </a>
           <button className="mobile-menu-btn">
             <i className="fas fa-bars"></i>
