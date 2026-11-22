@@ -1,0 +1,22 @@
+-- Run this SQL in the Neon SQL Editor before using the API.
+
+CREATE TABLE IF NOT EXISTS contact_messages (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(254) NOT NULL,
+  phone VARCHAR(40) NOT NULL DEFAULT '',
+  subject VARCHAR(160) NOT NULL DEFAULT '',
+  message TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS contact_messages_created_at_idx
+  ON contact_messages (created_at DESC);
+
+CREATE TABLE IF NOT EXISTS newsletter_subscribers (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  email VARCHAR(254) NOT NULL UNIQUE,
+  is_active BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
