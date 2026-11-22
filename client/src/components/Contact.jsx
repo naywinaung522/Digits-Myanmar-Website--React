@@ -15,7 +15,7 @@ export default function Contact() {
 <header>
 <div className="container header-container">
 <a className="logo" href="/">
-<img alt="Digits Myanmar Logo" className="logo-img" src="/images/DM Logo + circle back(31.7.2023).png" />
+<img alt="Digits Myanmar Logo" className="logo-img" src="/images/dm-logo-circle.png" />
 <span>Contact</span> </a>
 <button className="mobile-menu-btn">
 <i className="fas fa-bars"></i>
