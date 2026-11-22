@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
-import News from "./components/News.jsx";
+
 import Blog from "./components/Blog.jsx";
 import Support from "./components/Support.jsx";
 import Contact from "./components/Contact.jsx";
@@ -10,7 +10,7 @@ import { API_BASE_URL } from "./config.js";
 const routes = {
   "/": Home,
   "/about": About,
-  "/news": News,
+  
   "/blog": Blog,
   "/support": Support,
   "/contact": Contact,
